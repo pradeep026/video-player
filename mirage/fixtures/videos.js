@@ -22,7 +22,7 @@ export default {
         "created-at": 1472324886165,
         "thumbnail-image": 'assets/images/video_thumbnail_image_2.jpg',
         "videoSource": '',
-        "category": 'Technology',
+        "category": 'Social',
         "duration": "41:10"
       }
     },
