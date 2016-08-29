@@ -27,4 +27,15 @@ export default function() {
   this.get('/videos', function(schema) {
     return schema.db['videos'][0];
   });
+
+  this.get('/videos/:id', function(schema, request) {
+    var videos = schema.db['videos'][0].data;
+    var data = {};
+    videos.forEach( (video)=>{
+      if(video.id === request.params.id){
+        data = video
+      }
+    })
+    return {data: data};
+  });
 }

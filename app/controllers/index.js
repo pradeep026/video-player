@@ -33,6 +33,10 @@ export default Ember.Controller.extend({
   actions: {
     onCategorySelection(category){
       this.set('selectedVideoCategory', category);
+    },
+
+    goToVideoPlayer(videoId){
+      this.transitionToRoute('video-player', videoId);
     }
   }
 });
