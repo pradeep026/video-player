@@ -15,3 +15,8 @@
 /libpeerconnection.log
 npm-debug.log
 testem.log
+.bowerrc
+.ember-cli
+.jshintrc
+.editorconfig
+.DS_Store
